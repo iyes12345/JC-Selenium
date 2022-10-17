@@ -1,6 +1,9 @@
 package com.juaracoding.selenium.pageobject;
 
 import com.juaracoding.selenium.pageobject.drivers.DriverSingleton;
+import com.juaracoding.selenium.pageobject.pages.Alerts;
+import com.juaracoding.selenium.pageobject.pages.Frames;
+import com.juaracoding.selenium.pageobject.pages.ModalDialogs;
 import com.juaracoding.selenium.pageobject.pages.WebTables;
 import com.juaracoding.selenium.pageobject.utils.Constants;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +15,24 @@ public class MainApp {
         WebDriver driver = DriverSingleton.getDriver();
         driver.get(Constants.URL);
 
-        WebTables webTables = new WebTables();
-        webTables.registrationForm("Text 1", "Text 2", "text@email.com", "20", "20000", "SQA");
+        /*WebTables webTables = new WebTables();
+        webTables.registrationForm("Text 1", "Text 2", "text@email.com", "20", "20000", "SQA");*/
+
+
+        /*driver.get("https://demoqa.com/alerts");
+        Alerts alerts = new Alerts();
+        alerts.alertButton();
+        alerts.timerAlertButton();
+        alerts.confirmButton();
+        alerts.promtButton();*/
+
+        /*driver.get("https://demoqa.com/modal-dialogs");
+        ModalDialogs modalDialogs = new ModalDialogs();
+        modalDialogs.showSmallModal();*/
+
+        driver.get("https://demoqa.com/frames");
+        Frames frames = new Frames();
+        frames.sampleFrame();
 
         try {
             Thread.sleep(3000);

@@ -32,6 +32,7 @@ public class WebTables {
     @FindBy(id = "salary")
     WebElement salary;
 
+
     @FindBy(id = "department")
     WebElement department;
 

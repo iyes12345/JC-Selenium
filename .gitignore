@@ -1,6 +1,5 @@
 /.idea/
-/.idea/
-/target/
 /pom.xml
-/src/main/resources/
 /src/test/
+/src/main/resources/
+/target/
