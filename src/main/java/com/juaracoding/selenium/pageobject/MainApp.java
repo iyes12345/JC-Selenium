@@ -1,10 +1,7 @@
 package com.juaracoding.selenium.pageobject;
 
 import com.juaracoding.selenium.pageobject.drivers.DriverSingleton;
-import com.juaracoding.selenium.pageobject.pages.Alerts;
-import com.juaracoding.selenium.pageobject.pages.Frames;
-import com.juaracoding.selenium.pageobject.pages.ModalDialogs;
-import com.juaracoding.selenium.pageobject.pages.WebTables;
+import com.juaracoding.selenium.pageobject.pages.*;
 import com.juaracoding.selenium.pageobject.utils.Constants;
 import org.openqa.selenium.WebDriver;
 
@@ -30,9 +27,12 @@ public class MainApp {
         ModalDialogs modalDialogs = new ModalDialogs();
         modalDialogs.showSmallModal();*/
 
-        driver.get("https://demoqa.com/frames");
+        /*driver.get("https://demoqa.com/frames");
         Frames frames = new Frames();
-        frames.sampleFrame();
+        frames.sampleFrame();*/
+
+        Search_wishlist search = new Search_wishlist();
+        search.searchform();
 
         try {
             Thread.sleep(3000);
